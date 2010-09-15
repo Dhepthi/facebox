@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Facebox 1.2</title>
+  <link href="facebox.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="faceplant.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="facebox.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loading_image : 'facebox/loading.gif',
+        close_image   : 'facebox/closelabel.gif'
+      })
+    })
+  </script>
+</head>
+
+<body>
+
+
+        <div class="example">
+          <h2>Images</h2>
+
+          <p> <a href="sample.png" rel="facebox" title="Hello World!">View '/sample.png' in the Facebox (which got title in a tag)</a> </p>
+
+          <div class="code">
+            <h3>The Code</h3>
+            <code>&lt;a href="stairs.jpg" rel="facebox"&gt;text&lt;/a&gt;</code>
+          </div>
+        </div>
+
+        <div class="example">
+          <h2>Divs</h2>
+
+          <p> <a href="#info" rel="facebox">View the 'info' div in the Facebox (without title)</a> </p>
+
+          <div class="code">
+            <h3>The Code</h3>
+            <code>&lt;a href="#box" rel="facebox"&gt;text&lt;/a&gt;</code>
+          </div>
+        </div>
+
+	  <div id="info" style="display:none;">
+		<p> Hey, I'm the 'info' div! </p>
+		<p> I look like this: </p>
+		<code>
+		  &lt;div id="info" style="display:none;"&gt; <br/>
+			&nbsp;&nbsp;text<br/>
+		  &lt;/div&gt;
+		</code>
+	  </div>
+
+</body>
+</html>
