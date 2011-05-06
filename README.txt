@@ -1,5 +1,6 @@
 A simple extension of facebox with dynamic title read from attribute of a tag.
-Thank you.
+
+Thank you....
 Spritle Team (http://www.spritle.com/blogs)
 
 Sample Screen: <img src="http://github.com/spritle/facebox/blob/master/sample.png" />
